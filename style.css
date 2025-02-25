@@ -79,7 +79,7 @@ body {
     width: 90%; /* TODO: seguramente necesite otra cajita para que todo el contenido quede en un width concreto */
     display: inline-block;
     text-align: center;
-    padding: 8px;
+    padding: 12px 8px;
     font-weight: bold;
     border-radius: 8px;
 
