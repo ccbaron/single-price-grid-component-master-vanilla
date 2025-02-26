@@ -29,7 +29,7 @@ body {
 .info,
 .plan,
 .whyus {
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 .info {
@@ -50,7 +50,7 @@ body {
 .info__policy {
     color: var(--primary-yellow);
     font-weight: bold;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
 .info__description {
@@ -59,7 +59,8 @@ body {
 }
 
 .plan {
-    color: white; /* Lo pongo en el contenedor padre porque el color es una propiedad CSS que se hereda */
+    color: white;
+    /* Lo pongo en el contenedor padre porque el color es una propiedad CSS que se hereda */
     background-color: var(--primary-cyan);
     display: flex;
     flex-direction: column;
@@ -78,7 +79,7 @@ body {
 }
 
 .price__dollars {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .price__period {
@@ -119,4 +120,28 @@ body {
 .whyus__benefits {
     margin-top: 1rem;
     color: var(--neutral-gray);
+}
+
+@media (min-width: 600px) {
+    .card {
+        /* Añadir propiedades */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 700px;
+
+    }
+
+    
+
+    .plan {
+        border-bottom-left-radius: 8px;
+    }
+
+    .whyus {
+        border-bottom-left-radius: 0px;
+    }
+
+    .info {
+        grid-column: span 2;
+    }
 }
